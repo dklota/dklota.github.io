@@ -1,0 +1,6 @@
+
+.body {
+    background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgb(227, 209, 235) 100%);
+    font-family: 'Robot', sans-serif;
+    margin-bottom: 2px;
+}
