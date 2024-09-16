@@ -124,6 +124,21 @@ body {
     margin-right: 100px;
 }
 
+.projects-text p {
+    text-align: left;
+    padding-left: 150px;
+    font-size: smaller;
+    margin-right: 550px;
+}
+
+.projects-text {
+    margin-bottom: 120px;
+}
+
+.projects-text img {
+    margin-top: -230px;
+}
+
 .skills {
     text-align: center;
     margin-left: 200px;
@@ -137,5 +152,5 @@ body {
     display: inline-block;
     margin-left: 150px;
     vertical-align:baseline;
-    font-size: 17px;
+    font-size: 20px;
 }
