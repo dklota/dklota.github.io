@@ -56,30 +56,12 @@ const Skills = () => {
   ];
 
   const coursework = [
-    {
-        course: "Object-Oriented Programming",
-        link: "https://cs.ucdavis.edu/schedules-classes/ecs-036b-software-development-object-oriented-programming-c"
-    },
-    {
-        course: "Data Structures & Algorithms",
-        link: "https://cs.ucdavis.edu/schedules-classes/ecs-036c-data-structures-algorithms-programming"
-    },
-    {
-        course: "Algorithm Design and Analysis",
-        link: "https://cs.ucdavis.edu/schedules-classes/ecs-122a-algorithm-design-and-analysis"
-    },
-    {
-        course: "Introduction to Artificial Intelligence",
-        link: "https://cs.ucdavis.edu/schedules-classes/ecs-170-introduction-artificial-intelligence"
-    },
-    {
-        course: "Database Systems",
-        link: "https://cs.ucdavis.edu/schedules-classes/ecs-165a-database-systems"
-    },
-    {
-        course: "Machine Learning",
-        link: "https://cs.ucdavis.edu/schedules-classes/ecs-171-machine-learning"
-    }
+    "Object-Oriented Programming",
+    "Data Structures & Algorithms", 
+    "Algorithm Design & Analysis",
+    "Artificial Intelligence",
+    "Database Systems",
+    "Machine Learning"
   ];
 
   return (
@@ -126,7 +108,7 @@ const Skills = () => {
           <h3 className="heading-lg text-text-primary mb-12 text-center">
             <span className="gradient-text">Certifications</span>
           </h3>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
               <div key={index} className="card card-hover">
                 <div className="text-center">
@@ -151,16 +133,39 @@ const Skills = () => {
           <div className="card">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {coursework.map((course, index) => (
-                <a
-                  key={index}
-                  href={course.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center p-6 bg-dark-surface rounded-xl border border-dark-border hover:border-accent transition-all duration-300 group"
-                >
-                  <span className="text-text-secondary font-medium group-hover:text-accent transition-colors">{course.course}</span>
-                </a>
+                <div key={index} className="text-center p-6 bg-dark-surface rounded-xl border border-dark-border hover:border-accent transition-all duration-300">
+                  <span className="text-text-secondary font-medium">{course}</span>
+                </div>
               ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <div className="card border-accent/20 bg-gradient-to-r from-accent/5 to-accent/10">
+            <h3 className="heading-md text-text-primary mb-6">
+              Ready to Collaborate?
+            </h3>
+            <p className="text-text-secondary mb-8 max-w-3xl mx-auto text-xl leading-relaxed">
+              I bring a unique combination of technical expertise and leadership experience. 
+              Let's discuss how my skills can contribute to your next project.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <a
+                href="mailto:divleen2@gmail.com"
+                className="btn-primary text-lg px-10 py-4 focus-ring"
+              >
+                Let's Connect
+              </a>
+              <a
+                href="https://www.linkedin.com/in/divleen-lota/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-lg px-10 py-4 focus-ring"
+              >
+                View LinkedIn
+              </a>
             </div>
           </div>
         </div>
